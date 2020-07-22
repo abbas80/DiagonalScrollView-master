@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cell_content">#FCFCFC</color>
+    <color name="cell_content_text">#FAFAFA</color>
+    <color name="cell_header">#CDCDCD</color>
+    <color name="cell_header_text">#000</color>
+    <color name="action_bar">#333333</color>
+    <color name="action_bar_text">#ffffff</color>
+</resources>

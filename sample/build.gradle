@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+    google()
+}
+
+ext.versions = [
+        'minSdk'        : 14,
+        'compileSdk'    : 28,
+        'targetSdk'     : 28,
+        'buildTools'    : '28.0.0',
+
+        'supportLibrary': '28.0.0',
+]
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId "ua.org.tenletters.sample.spreadsheet"
+
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "ua.org.tenletters.widget:diagonalscrollview:0.3.3"
+
+    implementation "com.android.support:appcompat-v7:$versions.supportLibrary"
+    implementation "com.android.support:support-annotations:$versions.supportLibrary"
+}
